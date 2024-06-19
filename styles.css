@@ -21,7 +21,6 @@
     position: relative;
     width: calc(100% - 40px);
     max-width: 430px; 
-    /* height: 300px; */
     margin: 200px auto;
     background-color: hsl(217, 19%, 24%);
     text-align: center;
@@ -83,9 +82,9 @@ button:active {
 /* Media query for screens up to 375px wide */
 @media (max-width: 375px) {
     .advice-card {
-        width: calc(100% - 20px); 
+        width: calc(100% - 40px); 
         margin: 50px auto; 
-        height: auto; 
+        /* height: auto;  */
         padding: 0.5em; 
     }
 
