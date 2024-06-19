@@ -1,8 +1,13 @@
 html, body {
     margin: 0;
+    padding: 0;
     font-family: 'Manrope', sans-serif;
     font-weight: 800;
     background-color: hsl(218, 23%, 16%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .advice-card {
@@ -10,16 +15,18 @@ html, body {
     flex-direction: column;
     justify-content: space-between;
     position: relative;
-    width: 450px;
-    height: 250px;
-    margin:  auto;
+    width: 100%;
+    max-width: 430px;
+    height: 230px;
+    margin: 200px  auto;
     background-color: hsl(217, 19%, 24%);
     text-align: center;
     border-radius: 10px;
+    padding: 10px;
 }
 
 .advice-title {
-    padding: 1.25em;
+    margin-bottom: 1.25em;
     color: hsl(150, 100%, 66%);
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -27,19 +34,62 @@ html, body {
 }
 
 .advice-content {
+    margin: 0;
     color: hsl(193, 38%, 86%);
+    font-size: 1.75em;
+    line-height: 1.5;
 }
 img {
     display: block;
 }
-
+.divider {
+    margin-bottom: 20px;
+}
 button {
     position: absolute;
+    /* top: 90%; */
+    top: calc(100% - 25px); 
+    left: 45%;
+    padding: 15px;
+    border: none;
+    border-radius: 50%;
+    background-color: hsl(150, 100%, 66%);
+    cursor: pointer;
 }
-@media(min-width: 375px){
-
+button img {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+button:hover {
+    background-color: hsl(150, 100%, 70%);
+    box-shadow: 0 0 20px hsl(150, 100%, 66%);
 }
 
-@media (max-width: 1440px){
-
+button:active {
+    background-color: hsl(150, 100%, 60%);
+    box-shadow: 0 0 20px hsl(150, 100%, 66%);
 }
+@media(max-width: 375px){
+    .advice-card {
+        padding: 15px;
+    }
+
+    .advice-title {
+        font-size: 0.75em;
+    }
+
+    .advice-content p {
+        font-size: 1em;
+    }
+
+    button {
+        padding: 10px;
+    }
+
+    button img {
+        width: 15px;
+        height: 15px;
+    }
+}
+
