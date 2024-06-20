@@ -79,6 +79,10 @@ button:active {
     box-shadow: 0 0 20px hsl(150, 100%, 66%);
 }
 
+.hidden {
+    display: none;
+}
+
 /* Media query for screens up to 375px wide */
 @media (max-width: 375px) {
     .advice-card {
