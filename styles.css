@@ -88,6 +88,10 @@ button:active {
     margin: 1em 0;
 }
 
+.attribution { font-size: 11px; text-align: center; }
+
+    .attribution a { color: hsl(228, 45%, 44%); }
+
 /* Media query for screens up to 375px wide */
 @media (max-width: 375px) {
     .advice-card {
